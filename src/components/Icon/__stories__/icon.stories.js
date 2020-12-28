@@ -83,7 +83,7 @@ export const IconsList = () => {
             width: "100%",
             display: "flex",
             justifyContent: "center",
-            margin: "16px 0"
+            margin: "16px 0",
           }}
         >
           <SearchComponent
@@ -125,7 +125,7 @@ function IconComponent({ name, Component }) {
 }
 
 export default {
-  title: "Components|Icon",
+  title: "Monday Native Components|Icon",
   component: Icon,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

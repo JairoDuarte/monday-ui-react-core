@@ -19,7 +19,7 @@ export const Sandbox = () => (
         "Icon Position",
         {
           Start: Link.position.START,
-          End: Link.position.END
+          End: Link.position.END,
         },
         Link.position.START
       )}
@@ -29,7 +29,7 @@ export const Sandbox = () => (
           "New Window": Link.target.NEW_WINDOW,
           Parent: Link.target.PARENT,
           Self: Link.target.SELF,
-          Top: Link.target.TOP
+          Top: Link.target.TOP,
         },
         Link.target.NEW_WINDOW
       )}
@@ -116,7 +116,7 @@ export const RTLSupport = () => {
 };
 
 export default {
-  title: "Components|Link",
+  title: "Monday Native Components|Link",
   component: Link,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

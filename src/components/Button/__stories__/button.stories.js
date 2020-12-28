@@ -237,7 +237,7 @@ export const OnColorButtons = () => (
     <div
       style={{
         backgroundColor: "var(--color-blackish)",
-        borderRadius: "4px"
+        borderRadius: "4px",
       }}
     >
       <StoryStateRow>
@@ -274,7 +274,7 @@ export const OnColorButtons = () => (
       style={{
         backgroundColor: "var(--color-dark-pink)",
         borderRadius: "4px",
-        marginTop: "16px"
+        marginTop: "16px",
       }}
     >
       <StoryStateRow>
@@ -436,7 +436,7 @@ export const Loading = () => (
 );
 
 export default {
-  title: "Components|Button",
+  title: "Monday Native Components|Button",
   component: Button,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

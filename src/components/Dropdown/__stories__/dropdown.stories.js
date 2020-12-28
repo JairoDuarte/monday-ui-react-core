@@ -14,7 +14,7 @@ const mockColorOptions = [
   { value: "purple", label: "Purple" },
   { value: "red", label: "Red", isFixed: true },
   { value: "orange", label: "Orange" },
-  { value: "yellow", label: "Yellow" }
+  { value: "yellow", label: "Yellow" },
 ];
 
 const mockVirtualizedOptions = new Array(10000)
@@ -34,9 +34,9 @@ export const Sandbox = () => {
   const isWithDefaultValue = boolean("defautValue", false);
   const noOptionsMessage = text("noOptionsMessage", "No options found");
 
-  const mockPromiseOptions = inputValue => {
+  const mockPromiseOptions = (inputValue) => {
     const arr = isVirtualized ? mockVirtualizedOptions : mockColorOptions;
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(
           arr.filter(({ label }) =>
@@ -58,8 +58,8 @@ export const Sandbox = () => {
       ...(isDefaultOptions && {
         defaultOptions: isVirtualized
           ? [mockVirtualizedOptions[0]]
-          : mockDefaultOptions
-      })
+          : mockDefaultOptions,
+      }),
     };
   }
 
@@ -68,8 +68,8 @@ export const Sandbox = () => {
     ...(isWithDefaultValue && {
       defaultValue: isVirtualized
         ? mockVirtualizedOptions[0]
-        : mockColorOptions[0]
-    })
+        : mockColorOptions[0],
+    }),
   };
 
   return (
@@ -113,29 +113,29 @@ const mockIcons = [
     label: "Item_1",
     icon: icons.DropdownChevronUp,
     iconType: Icon.type.SVG,
-    iconSize: 20
+    iconSize: 20,
   },
   {
     value: "Item_2",
     label: "Item_2",
     icon: icons.Board,
     iconType: Icon.type.SVG,
-    iconSize: 40
+    iconSize: 40,
   },
   {
     value: "Item_3",
     label: "Item_3",
     icon: icons.Bolt,
     iconType: Icon.type.SVG,
-    iconSize: 60
+    iconSize: 60,
   },
   {
     value: "Item_4",
     label: "Item_4",
     icon: icons.Calendar,
     iconType: Icon.type.SVG,
-    iconSize: 80
-  }
+    iconSize: 80,
+  },
 ];
 
 export const CustomRender = () => (
@@ -241,9 +241,9 @@ export const rtl = () => (
 );
 
 export const virtualized = () => {
-  const mockPromiseOptions = inputValue => {
+  const mockPromiseOptions = (inputValue) => {
     const arr = mockVirtualizedOptions;
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(
           arr.filter(({ label }) =>
@@ -277,9 +277,9 @@ export const virtualized = () => {
 };
 
 export const async = () => {
-  const mockPromiseOptions = inputValue => {
+  const mockPromiseOptions = (inputValue) => {
     const arr = mockColorOptions;
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(
           arr.filter(({ label }) =>
@@ -328,6 +328,6 @@ export const async = () => {
 };
 
 export default {
-  title: "Components/Dropdown",
-  component: Dropdown
+  title: "Monday Native Components|Dropdown",
+  component: Dropdown,
 };

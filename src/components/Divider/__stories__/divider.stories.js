@@ -17,7 +17,7 @@ export const Sandbox = () => {
               id="divider"
               direction={select("direction", {
                 HORIZONTAL: Divider.directions.HORIZONTAL,
-                VERTICAL: Divider.directions.VERTICAL
+                VERTICAL: Divider.directions.VERTICAL,
               })}
             />
           </div>
@@ -47,7 +47,7 @@ export const Directions = () => (
 );
 
 export default {
-  title: "Components/Divider",
+  title: "Monday Native Components|Divider",
   component: Divider,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

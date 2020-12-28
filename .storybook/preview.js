@@ -7,19 +7,17 @@ import { loadComponentsStories } from "../src/components/componensts-stories";
 addParameters({
   docs: {
     container: DocsContainer,
-    page: DocsPage
+    page: DocsPage,
   },
   themes: [
-    { name: 'Light', class: 'light-app-them', color: '#ffffff', default: true },
-    { name: 'Dark', class: 'dark-app-theme', color: '#000000' },
+    { name: "Light", class: "light-app-them", color: "#ffffff", default: true },
+    { name: "Dark", class: "dark-app-theme", color: "#000000" },
   ],
 });
 
-
-
 const storiesLoaderFunction = () => [
+  ...loadComponentsStories(),
   ...loadFoundationsStories(),
-  ...loadComponentsStories()
 ];
 
 configure(storiesLoaderFunction, module);

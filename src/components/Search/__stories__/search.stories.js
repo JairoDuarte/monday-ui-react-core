@@ -16,14 +16,14 @@ export const Sandbox = () => {
           autoFocus={boolean("autoFocus", true)}
           placeholder={text("placeholder", "default placeholder")}
           debounceRate={number("debounceRate", 0)}
-          onChange={action("onChange", value => console.log(value))}
+          onChange={action("onChange", (value) => console.log(value))}
           value={text("value", "")}
           iconName={text("Font Awesome icon name", "fa-search")}
           secondaryIconName="fa-close"
           validation={select("validation", {
             None: null,
             Error: { status: "error" },
-            Success: { status: "success" }
+            Success: { status: "success" },
           })}
           id="Knobs"
           clearOnIconClick={boolean("clearOnIconClick", true)}
@@ -169,7 +169,7 @@ export const States = () => {
 };
 
 export default {
-  title: "Components|Search",
+  title: "Monday Native Components|Search",
   component: Search,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { action } from "@storybook/addon-actions";
 import { text, boolean, number } from "@storybook/addon-knobs";
 import Checkbox from "../Checkbox";
-import {
-  StoryStateRow,
-} from "../../storybook-helpers";
+import { StoryStateRow } from "../../storybook-helpers";
 import { renderCheckboxes } from "./checkbox.stories.renderCheckboxes";
 import StoryWrapper from "../../../StoryBookComponents/StoryWrapper/StoryWrapper";
 import "./checkbox.stories.scss";
@@ -120,7 +118,7 @@ export const OnChange = () => {
         label={text("label", "text")}
         checked={selected}
         disabled={boolean("isDisabled", false)}
-        onChange={e => {
+        onChange={(e) => {
           action("onChange")(e);
           setsSelected(!selected);
         }}
@@ -149,12 +147,12 @@ export const RTLSupport = () => [
       label={text("RTL label", "English text")}
       disabled={boolean("disabled", false)}
     />
-  </div>
+  </div>,
 ];
 
 export default {
-  title: "Components/Checkbox",
+  title: "Monday Native Components|Checkbox",
   component: Checkbox,
   argTypes: { onClick: { action: "onChange" } },
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

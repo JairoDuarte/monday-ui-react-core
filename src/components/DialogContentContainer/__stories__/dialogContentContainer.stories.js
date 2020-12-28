@@ -35,7 +35,7 @@ export const Types = () => (
 );
 
 export default {
-  title: "Components/DialogContentContainer",
+  title: "Monday Native Components|DialogContentContainer",
   component: DialogContentContainer,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

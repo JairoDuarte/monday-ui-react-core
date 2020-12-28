@@ -9,7 +9,7 @@ import {
   StoryStateRow,
   StoryStateColumn,
   FlexLayout,
-  Divider
+  Divider,
 } from "../../storybook-helpers";
 import { withPerformance } from "storybook-addon-performance";
 
@@ -21,7 +21,7 @@ export const Sandbox = () => (
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flex: "1 1 auto"
+        flex: "1 1 auto",
       }}
     >
       <Tooltip
@@ -34,7 +34,7 @@ export const Sandbox = () => (
             Error: "error",
             Share: "share",
             Private: "private",
-            Surface: "surface"
+            Surface: "surface",
           },
           "dark"
         )}
@@ -136,7 +136,7 @@ export const ImmediateTooltips = () => (
 );
 
 export default {
-  title: "Components|Tooltip",
+  title: "Monday Native Components|Tooltip",
   component: Tooltip,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

@@ -62,7 +62,7 @@ export const Line = () => (
 );
 
 export default {
-  title: "Components|Label",
+  title: "Monday Native Components|Label",
   component: Label,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

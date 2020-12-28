@@ -126,7 +126,7 @@ const renderRadioButtons = (count, options = {}) => {
 };
 
 export default {
-  title: "Components|RadioButton",
+  title: "Monday Native Components|RadioButton",
   component: RadioButton,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

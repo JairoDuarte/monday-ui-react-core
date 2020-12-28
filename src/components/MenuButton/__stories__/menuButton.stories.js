@@ -109,7 +109,7 @@ export const Sizes = () => (
 );
 
 export default {
-  title: "Components|MenuButton",
+  title: "Monday Native Components|MenuButton",
   component: MenuButton,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

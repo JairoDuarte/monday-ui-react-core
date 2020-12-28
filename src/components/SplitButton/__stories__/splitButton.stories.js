@@ -284,7 +284,7 @@ export const Sandbox = () => (
       secondaryDialogPosition={select("Seconday Dialog Alignment", {
         BOTTOM_START: SplitButton.secondaryPositions.BOTTOM_START,
         BOTTOM_MIDDLE: SplitButton.secondaryPositions.BOTTOM_MIDDLE,
-        BOTTOM_END: SplitButton.secondaryPositions.BOTTOM_END
+        BOTTOM_END: SplitButton.secondaryPositions.BOTTOM_END,
       })}
       disabled={boolean("Disabled", false)}
       shouldCloseOnClickInsideDialog={boolean(
@@ -299,7 +299,7 @@ export const Sandbox = () => (
 );
 
 export default {
-  title: "Components|SplitButton",
+  title: "Monday Native Components|SplitButton",
   component: SplitButton,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

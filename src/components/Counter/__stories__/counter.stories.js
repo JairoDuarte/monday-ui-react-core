@@ -258,7 +258,7 @@ export const NotificationCounter = () => (
 );
 
 export default {
-  title: "Components|Counter",
+  title: "Monday Native Components|Counter",
   component: Counter,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

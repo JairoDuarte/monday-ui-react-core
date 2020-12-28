@@ -4,7 +4,7 @@ import { withPerformance } from "storybook-addon-performance";
 import AttentionBox from "../AttentionBox";
 import {
   StoryStateRow,
-  ComponentStateDescription
+  ComponentStateDescription,
 } from "../../storybook-helpers";
 import StoryWrapper from "../../../StoryBookComponents/StoryWrapper/StoryWrapper";
 import { ATTENTION_BOX_TYPES } from "../AttentionBoxConstants";
@@ -26,7 +26,7 @@ export const Sandbox = () => {
             Primary: ATTENTION_BOX_TYPES.PRIMARY,
             Success: ATTENTION_BOX_TYPES.SUCCESS,
             Danger: ATTENTION_BOX_TYPES.DANGER,
-            Dark: ATTENTION_BOX_TYPES.DARK
+            Dark: ATTENTION_BOX_TYPES.DARK,
           },
           ATTENTION_BOX_TYPES.PRIMARY
         )}
@@ -58,7 +58,7 @@ export const States = () => {
   );
 };
 
-const renderAttentionBox = type => {
+const renderAttentionBox = (type) => {
   const customClass = "monday-style-attention-box-component-custom-class";
 
   return (
@@ -72,7 +72,7 @@ const renderAttentionBox = type => {
 };
 
 export default {
-  title: "Components|AttentionBox",
+  title: "Monday Native Components|AttentionBox",
   component: AttentionBox,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

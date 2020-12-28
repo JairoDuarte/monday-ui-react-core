@@ -1,5 +1,5 @@
 import React from "react";
-import { boolean, number, select, color , text} from "@storybook/addon-knobs";
+import { boolean, number, select, color, text } from "@storybook/addon-knobs";
 import LinearProgressBar from "../LinearProgressBar";
 import colors from "../../../../constants/colors.json";
 import "./linearProgressBar.stories.scss";
@@ -44,7 +44,7 @@ export const multiProgressBars = () => {
   const multiValues = [
     { value: firstValue, color: firstColor },
     { value: secondValue, color: secondColor },
-    { value: thirdValue, color: thirdColor }
+    { value: thirdValue, color: thirdColor },
   ];
   return (
     <div style={{ width: "50%", margin: "40px" }}>
@@ -63,7 +63,7 @@ export const multiProgressBars = () => {
 };
 
 export default {
-  title: "Components|Progress Bars/LinearProgressBar",
+  title: "Monday Native Components|Progress Bars/LinearProgressBar",
   component: LinearProgressBar,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };

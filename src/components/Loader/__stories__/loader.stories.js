@@ -29,7 +29,7 @@ export const Sizes = () => {
 };
 
 export default {
-  title: "Components|Loader",
+  title: "Monday Native Components|Loader",
   component: Loader,
-  decorators: [withPerformance]
+  decorators: [withPerformance],
 };
