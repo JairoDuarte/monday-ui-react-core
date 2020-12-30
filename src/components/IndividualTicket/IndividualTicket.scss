@@ -1,0 +1,78 @@
+@import "../../styles/global-css-settings.scss";
+@import "../../styles/typography.scss";
+@import "../../styles/themes.scss";
+
+.ticket-booth-style-individual-ticket.dialog-content-container {
+  height: 5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ticket-booth-style-individual-ticket {
+  outline: none;
+  border: none;
+  height: auto;
+  font-family: Roboto, sans-serif;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+
+  &--font-size {
+    &-sm {
+      @include font-input();
+      padding: $spacing-xs $spacing-small;
+      min-height: 32px;
+      line-height: 24px;
+    }
+
+    &-md {
+      @include font-paragraph();
+      padding: $spacing-small $spacing-medium;
+      min-height: 40px;
+    }
+
+    &-lg {
+      @include font-paragraph();
+      padding: $spacing-small-medium $spacing-large;
+      min-height: 48px;
+    }
+  }
+
+  .monday-style-label {
+    min-width: 6rem;
+    min-height: 2rem;
+    font-size: inherit;
+  }
+
+  .contentButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .image-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .monday-style-link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    &:focus-visible {
+      color: inherit;
+    }
+    &:hover {
+      .monday-style-link--text {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
+}

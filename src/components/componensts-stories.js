@@ -1,5 +1,6 @@
 export function loadComponentsStories() {
   return [
+    require("./IndividualTicket/__stories__/individualTicket.stories.js"),
     require("./AttentionBox/__stories__/attentionBox.stories.js"),
     require("./Button/__stories__/button.stories.js"),
     require("./Counter/__stories__/counter.stories.js"),
@@ -17,7 +18,5 @@ export function loadComponentsStories() {
 }
 
 export function loadHelpers() {
-  return [
-    require("./FormattedNumber/__stories__/formattedNumber.stories")
-  ]
+  return [require("./FormattedNumber/__stories__/formattedNumber.stories")];
 }
