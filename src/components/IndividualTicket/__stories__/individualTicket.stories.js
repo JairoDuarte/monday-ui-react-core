@@ -2,7 +2,6 @@ import React from "react";
 import { withPerformance } from "storybook-addon-performance";
 import IndividualTicket from "../IndividualTicket";
 import "./individualTicketStory.scss";
-import ComponentStateDescription from "../../storybook-helpers/component-state-description/ComponentStateDescription";
 
 import Label from "../../Label/Label";
 
