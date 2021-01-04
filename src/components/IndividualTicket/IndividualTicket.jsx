@@ -42,11 +42,11 @@ const IndividualTicket = forwardRef(
         </div>
         <div>{lastUpdates}</div>
         <div className="contentButton">
-          <Button>
+          <Button size={Button.sizes.SMALL}>
             <Link text="View" href={ticketURL} />
           </Button>
 
-          <span>ID#: {ticketID} </span>
+          <span className="label-id">ID#: {ticketID} </span>
         </div>
 
         {children}

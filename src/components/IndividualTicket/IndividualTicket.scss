@@ -2,6 +2,30 @@
 @import "../../styles/typography.scss";
 @import "../../styles/themes.scss";
 
+@-webkit-keyframes automationCard {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes automationCard {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .ticket-booth-style-individual-ticket.dialog-content-container {
   height: 5rem;
   width: 100%;
@@ -20,6 +44,19 @@
   align-items: center;
   height: 5rem;
   width: 100%;
+  padding: 1.2rem 2rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transform: translate3d(0, 0, 0);
+  -webkit-animation: automationCard linear 0.3s;
+  animation: automationCard linear 0.3s;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, -4px, 0);
+    background-color: #ffffff;
+    background-color: var(--secondary-background-color);
+  }
 
   &--font-size {
     &-sm {
@@ -53,6 +90,18 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
+    height: 150%;
+    width: 8rem;
+    button {
+      position: absolute;
+      top: 0%;
+    }
+    span.label-id {
+      position: absolute;
+      bottom: 0%;
+      font-size: 0.8rem;
+    }
   }
 
   .image-circle {
